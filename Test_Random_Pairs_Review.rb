@@ -17,4 +17,9 @@ class TestPairsArray < Minitest::Test
 		pairs = create_partners(['Ruby', 'Weiss', 'Blake', 'Yang', 'Jaune', 'Nora', 'Pyrrha', 'Ren', 'Coco', 'Fox', 'Velvet', 'Yatsu'])
 		assert_equal(6, pairs.count)
 	end
+
+	def test_teams_RWBY_JNPR_and_CFVY_plus_extra
+		pairs = create_partners(['Ruby', 'Weiss', 'Blake', 'Yang', 'Jaune', 'Nora', 'Pyrrha', 'Ren', 'Coco', 'Fox', 'Velvet', 'Yatsu', 'Cinder', 'Emerald'])
+		assert_equal(7, pairs.count)
+	end
 end
