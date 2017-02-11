@@ -32,4 +32,9 @@ class TestPairsArray < Minitest::Test
 		pairs = create_partners(['Summer', 'Pyrrha', 'Ozpin', 'Penny'])
 		assert_equal(2, pairs.count)
 	end
+
+	def test_hated_characters_in_RWBY
+		pairs = create_partners(['Raven', 'Cinder', 'Jacques', 'Whitley', 'Lionheart', 'Adam'])
+		assert_equal(3, pairs.count)
+	end
 end
