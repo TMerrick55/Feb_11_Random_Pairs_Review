@@ -22,4 +22,9 @@ class TestPairsArray < Minitest::Test
 		pairs = create_partners(['Ruby', 'Weiss', 'Blake', 'Yang', 'Jaune', 'Nora', 'Pyrrha', 'Ren', 'Coco', 'Fox', 'Velvet', 'Yatsu', 'Cinder', 'Emerald'])
 		assert_equal(7, pairs.count)
 	end
+
+	def test_Salem_faction
+		pairs = create_partners(['Salem', 'Tyrian', 'Hazel', 'Dr. Watts', 'Cinder', 'Lionheart'])
+		assert_equal(3, pairs.count)
+	end
 end
