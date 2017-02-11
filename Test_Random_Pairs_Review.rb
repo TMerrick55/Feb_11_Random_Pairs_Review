@@ -27,4 +27,9 @@ class TestPairsArray < Minitest::Test
 		pairs = create_partners(['Salem', 'Tyrian', 'Hazel', 'Dr. Watts', 'Cinder', 'Lionheart'])
 		assert_equal(3, pairs.count)
 	end
+
+	def test_dead_or_believed_to_be_dead_RWBY_Characters
+		pairs = create_partners(['Summer', 'Pyrrha', 'Ozpin', 'Penny'])
+		assert_equal(2, pairs.count)
+	end
 end
